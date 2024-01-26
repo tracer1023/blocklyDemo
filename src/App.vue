@@ -61,7 +61,6 @@ const showCode = () => (code.value = javascriptGenerator.workspaceToCode(foo.val
 
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
     <BlocklyComponent id="blockly1">
       <block type="controls_ifelse"></block>
       <block type="logic_compare"></block>
