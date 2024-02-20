@@ -39,4 +39,13 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  server: {
+    host: "0.0.0.0",
+    port: 8888,
+    open: true,
+  },
+  build: {
+    outDir: "dist",
+    assetsInlineLimit: 4096,
+  },
 });

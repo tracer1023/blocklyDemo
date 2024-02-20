@@ -7,10 +7,32 @@ const blocklyToolbox = ref();
 const blocklyDiv = ref();
 const workspace = shallowRef();
 
+const options = {
+  ...props.options,
+  media: "media/",
+  grid: {
+    spacing: 25,
+    length: 3,
+    colour: "#ccc",
+    snap: true,
+  },
+  sounds: true,
+  trashcan: true,
+  //   renderer: "aiedu_renderer",
+  zoom: {
+    controls: false,
+    wheel: false,
+    startScale: 1.0,
+    maxScale: 5,
+    minScale: 0.7,
+    scaleSpeed: 1.2,
+    pinch: true, //
+  },
+};
 defineExpose({ workspace });
 
 onMounted(() => {
-  const options = props.options || {};
+  //   const options = props.options || {};
   if (!options.toolbox) {
     options.toolbox = blocklyToolbox.value;
   }
