@@ -1,9 +1,0 @@
-export const ROBOT_MODE_FLY1 = "fly1";
-export const ROBOT_MODE_FLY2 = "fly2";
-export const ROBOT_MODE_FLY5 = "fly5";
-export const ROBOT_MODE_FLY8 = "fly8";
-export const ROBOT_MODE_WLP1 = "wlp1";
-export const ROBOT_MODE_WLP2 = "wlp2";
-export const ROBOT_MODE_WLP1_PLUS = "wlp1Plus";
-export const ROBOT_MODE_WLP2_PLUS = "wlp2Plus";
-export const ROBOT_MODE_WLP5 = "wlp5";
